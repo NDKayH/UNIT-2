@@ -12,9 +12,7 @@ The Karuizawa Town Hall has recently announced its commitment to reducing power 
 Considering the client’s needs and budgetary constraints, an effective solution involves using the DHT11 sensor to monitor temperature and humidity levels in residential rooms over a 48-hour period. The DHT11 sensor, priced at under $5 USD, offers adequate precision (Temperature Range: 0°C to 50°C [well within the realistic range], Humidity Range: 20% to 90%) and uses simple SPI communication, making it suitable for large-scale deployment.
 Here's a revised version of your solution components section, incorporating the use of the Flask library, a 5-second data collection interval, data upload to a local server, and graph analysis with Matplotlib. This is formatted for a professional Google Doc or project report:
 
-### **Components of the Solution**
-
-### **Data Collection**
+### **Components of the Solution: Data Collection**
 
 The core of the data collection process involves capturing temperature and humidity readings using the DHT11 sensor using a Raspberry Pi 4 Model B. This process ensures continuous and precise data logging.
 
