@@ -93,8 +93,6 @@ The poster will present the data and conclusions in an accessible format for res
 **Quote from the problem definition**:
 *"…in a data-driven conclusion to proffer solutions for energy optimization."*
 
----
-
 ## **TOK Connection**
 
 ### **Technology and Environmental Understanding**
