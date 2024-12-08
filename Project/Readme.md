@@ -22,7 +22,7 @@ In furtherance of enhancing the usefulness of this project, the information coll
 
 This investigation also considers long-term sustainability and adaptability. The system is designed to be scalable and maintainable, allowing for enhancements and modifications in the future if needed. For example, it could include extra sensors or more sophisticated data analysis methods to gain even deeper insights.
 
-In summary, this project addresses the need for optimizing indoor climate conditions in Karuizawa homes by leveraging affordable technology and data-driven analysis. Through continuous monitoring, detailed analysis, and clear recommendations, the goal is to reduce energy consumption, lower carbon emissions, and promote a more sustainable living environment for the community.
+In summary, this project addresses the need for optimizing indoor climate conditions in Karuizawa homes by leveraging affordable technology and data-driven analysis. Through continuous monitoring, analysis, and clear recommendations, the goal is to reduce energy consumption, lower carbon emissions, and promote a more sustainable living environment for the community.
 
 
 ## **Proposed Solution**
