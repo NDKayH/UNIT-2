@@ -171,17 +171,7 @@ The core of the data collection process involves capturing temperature and humid
 
 - **Summary**: Visual representations, insights, and recommendations.
 
-**Issue Tackled**: Effective communication with stakeholders.
-
----
-
-## **TOK Connection Questions**
-
-1. **Technological Limitations**: How do they affect the accuracy of environmental data?  
-2. **Ethical Responsibilities**: What are the implications of collecting data from private spaces?  
-3. **Contextual Influence**: How does context impact the interpretation of indoor climate data?
-
----
+**Issue Tackled**: Effective communication with stakeholders
 
 ## **Criteria B: Design**
 
