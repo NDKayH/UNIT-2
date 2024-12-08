@@ -492,3 +492,61 @@ def moving_average(windowSize:int, x:list)->list:
     return x_smoothed
 
 ```
+
+## **Conclusions for the Study**
+
+### **1. Temperature and Humidity Trends**
+- **Observation**: From the gathered data and visualization, oscillations in temperature and humidity readings are well marked within the 48 hours.
+- **Insight**: Oscillations of indoor climatic conditions can be linked with external factors such as:
+ - **On/Off condition of heating systems**
+- **Open/closed status of windows and doors**
+ - **Weather conditions outdoors**
+- **Impact**: These insights allow for the identification of periods where **inefficient heating or cooling** could have resulted in wastage of energy.
+
+### **2. Anomaly Detection**
+- **Observation**: The analysis detects anomalies such as abrupt temperature drops or increases.
+- **Insight**: Such anomalies could be caused by:
+ - **Accidental leaving open of windows or doors**
+- **Running heating systems for longer than necessary**
+- **Impact**: Identifying these is the first step in implementing appropriate **corrective measures** for avoiding energy waste.
+
+### **3. Mathematical Modeling and Predictive Analysis**
+- **Observation**: Linear regression and moving average models turn out to be very accurate in identifying the trend and thereby predicting temperature and humidity in the next 12 hours.
+- **Insight**: These models allow us to foresee **future conditions** and schedule heating or cooling accordingly.
+- **Impact**: Predictive analysis helps in **preemptively optimizing indoor climate**, reducing energy consumption.
+
+### **4. Comparative Analysis and Data Insights**
+- **Observation**: Statistical analysis of the data provides key metrics:
+  - **Mean**: Average temperature and humidity levels.
+  - **Standard Deviation**: Measure of variability in the readings.
+  - **Minimum and Maximum Values**: Identify extremes that may indicate inefficiencies.
+  - **Median**: Central tendency of the data.
+- **Impact**: These insights help in understanding the **range and consistency** of indoor conditions, allowing for better climate management strategies.
+
+### **5. Data Redundancy and Reliability**
+- **Observation**: Data is stored both **locally (CSV)** and on the **local server**.
+- **Insight**: This redundancy ensures that no data is lost during **network failures** or **power outages**.
+- **Impact**: Reliable data storage supports continuous monitoring and accurate analysis.
+
+### **6. Cost-Effective Solution
+- **Observation**: The hardware components used in this project, namely the DHT11 sensor and Raspberry Pi 4 Model B, are fairly inexpensive and easily available.
+- **Insight**: The project is within a decent budget with very accurate results.
+- **Impact**: The low cost of the setup makes it feasible for **large-scale deployment** in residential areas.
+
+### **7. Practical Recommendations**
+- **Recommendation**: Based on the data analysis, the following actions are recommended to achieve better energy efficiency:
+- **Seal Windows and Doors**: Ensure windows and doors are closed to prevent heat loss.
+  - **Optimize Heating Schedules**: Avoid leaving heating systems on for extended periods.
+  - **Monitor Humidity Levels**: Maintain optimal humidity levels to reduce the need for additional heating or cooling.
+  - **Regular Monitoring**: Use continuous monitoring to identify and address inefficiencies promptly.
+
+### **8. Effective Communication**
+- **Observation**: The poster and visualizations give clear, accessible summaries of the data and findings.
+- **Insight**: The results are presented in a way that **non-technical stakeholders** can understand and act upon.
+- **Impact**: This ensures the recommendations can be effectively implemented by residents.
+
+---
+ 
+## **Summary**
+
+Your study successfully identifies the contributing factors to indoor climate inefficiencies, as well as data-driven solutions, in order to optimize energy consumption in homes in Karuizawa. Visualization merged with statistical analysis, predictive modeling, and practical recommendations provide an integrated approach toward energy efficiency and sustainability.
