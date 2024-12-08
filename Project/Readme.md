@@ -9,8 +9,6 @@ The Karuizawa Town Hall has recently announced its commitment to reducing power 
 
 **Challenge**: Identify fluctuations in indoor environmental conditions causing energy inefficiencies and provide a comprehensive, data-driven solution for optimizing power consumption.
 
----
-
 ## **Proposed Solution**
 
 ### **Components of the Solution**
@@ -32,8 +30,6 @@ The Karuizawa Town Hall has recently announced its commitment to reducing power 
 - **Python Script**: Captures temperature and humidity readings every 5 seconds.  
 - **CSV**: Stores readings locally in a `.csv` file.  
 - **Real-Time Upload**: Data uploaded to a local server using HTTP requests.
-
----
 
 ### **Data Analysis and Visualization**
 
