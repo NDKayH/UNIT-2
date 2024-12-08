@@ -1,9 +1,7 @@
 # Unit 2: Optimizing Indoor Climate for Energy Efficiency and Environmental Sustainability in Karuizawa
 **Noah Hoffman**
 
-## Project Overview
-
-### **Criteria A: Planning**
+## **Criteria A: Planning**
 
 ## **Problem Definition**
 
