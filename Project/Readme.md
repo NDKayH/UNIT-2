@@ -197,18 +197,13 @@ Here is a detailed **Test Plan** table for your project, which includes various 
 
 ---
 
-## **Test Plan**
-
 | **Test No.** | **Test Type**              | **Description**                                                                                     | **Procedure**                                                                                                                          | **Expected Outcome**                                                                                                        | **Criteria** |
 |--------------|----------------------------|-----------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|--------------|
-| 1            | Functional: Sensor Reading | Check that the DHT11 sensor reads temperature and humidity accurately.                            | Run the data collection script from the local pi                                     | Temperature and humidity readings are not fluctuating unrealistically                                      | B            |
-| 2            | Functional: Data Logging   | Ensure data is being saved to the CSV file correctly.  (sent to a placeholder '.csv')                                                  | Run the script for 5 minutes and check the CSV file for accurate entries.                                                             | Data entries in the CSV match the real-time sensor readings.                                                               | B            |
-| 3            | Functional: Server Upload  | Verify that temperature and humidity data are uploaded to the server successfully.                 | Run the script and check the local server's database for new entries corresponding to the sensor's readings.                                        | Data appears correctly.                                                | B            |
-| 4            | Functional: Data Redundancy| Check if data is stored both locally and on the server.                                            | Disconnect the server and ensure data is saved locally, then reconnect and check for data upload.                                     | Data is saved in the '.csv' during disconnection and uploaded to the server once reconnected .                                 | B            |
-                                                | C            |
-| 5           | Non-Functional: Load Testing | Test how the system handles extended data collection over 48 hours.                                 | Run the script continuously for 48 hours and monitor performance.                                                                     | System runs without crashes or data loss, and data is logged correctly throughout.                                          | C            |
-
----
+| 1            | Functional: Sensor Reading | Check that the DHT11 sensor reads temperature and humidity accurately.                             | Run the data collection script from the local pi.                                                                                      | Temperature and humidity readings are not fluctuating unrealistically.                                                    | B            |
+| 2            | Functional: Data Logging   | Ensure data is being saved to the CSV file correctly. (sent to a placeholder '.csv')                | Run the script for 5 minutes and check the CSV file for accurate entries.                                                             | Data entries in the CSV match the real-time sensor readings.                                                               | B            |
+| 3            | Functional: Server Upload  | Verify that temperature and humidity data are uploaded to the server successfully.                 | Run the script and check the local server's database for new entries corresponding to the sensor's readings.                         | Data appears correctly.                                                                                                     | B            |
+| 4            | Functional: Data Redundancy| Check if data is stored both locally and on the server.                                            | Disconnect the server and ensure data is saved locally, then reconnect and check for data upload.                                     | Data is saved in the '.csv' during disconnection and uploaded to the server once reconnected.                              | B            |
+| 5            | Non-Functional: Load Testing | Test how the system handles extended data collection over 48 hours.                                | Run the script continuously for 48 hours and monitor performance.                                                                     | System runs without crashes or data loss, and data is logged correctly throughout.                                         | C            |
 
 ### **Key Criteria References**
 
@@ -216,18 +211,16 @@ Here is a detailed **Test Plan** table for your project, which includes various 
 - **C**: Data Analysis and Visualization  
 - **D**: Presentation and Communication of Results  
 
-This test plan ensures that your system meets both functional and non-functional requirements, delivering accurate data collection, reliable analysis, and clear communication of results. Let me know if any adjustments are needed!
-
 ## **Criteria C: Development**
 
 ### **Techniques Used**
 
-1. **Python Functions** for modular design  
+1. **Python Functions** for design  
 2. **Dictionaries & Lists** to store sensor data  
 3. **For Loops and While Loops** for data collection  
 4. **Try and Except** for error handling  
-5. **CSV Files** for data storage  
-6. **Flask API** for real-time data access  
+5. **'.csv' Files** for data storage  
+6. **API** for real-time data access  
 7. **Requests Library** for server communication  
 8. **Matplotlib** for data visualization  
 
