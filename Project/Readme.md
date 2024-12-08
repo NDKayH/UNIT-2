@@ -120,9 +120,6 @@ Data collection from private homes needs consent and ethical treatment. The digi
 
 These might be due to the way the data is interpreted through various cultural and contextual biases. For example, comfort and the levels of acceptable temperature may differ between households. There is a potential for analysis bias leading to a conclusion that does not correctly depict the residents' experience or needs.
 
----
-Success Criterion: Your project objectives will be explicit, measurable, and align with your problem statement. Kindly let me know if further editing is needed.
-
 ### **Components of the Solution: Data Collection**
 
 The core of the data collection process involves capturing temperature and humidity readings using the DHT11 sensor using a Raspberry Pi 4 Model B. This process ensures continuous and precise data logging.
@@ -164,26 +161,6 @@ The core of the data collection process involves capturing temperature and humid
 ## **Design Statement**
 
 *Our team is developing a Python-based system using a DHT11 sensor to monitor indoor temperature and humidity levels. Data will be recorded over 48 hours and stored in a CSV database. The goal is to identify fluctuations in indoor conditions and provide data-driven solutions to optimize power consumption in Karuizawa homes.*
-
-## **Success Criteria**
-
-### **Visual Representation**
-
-- **Graphs** illustrating temperature and humidity trends over 48 hours.
-
-**Issue Tackled**: Identifying trends in environmental conditions to optimize energy use.
-
-### **Data Collection and Storage**
-
-- **Every 5 Minutes**: Temperature and humidity readings logged in CSV format.
-
-**Issue Tackled**: Ensuring consistent and accurate data logging.
-
-### **Mathematical Modeling**
-
-- **Linear Models** to analyze trends and predict future conditions.
-
-**Issue Tackled**: Accurate analysis for identifying inefficiencies.
 
 ### **Comparative Analysis**
 
