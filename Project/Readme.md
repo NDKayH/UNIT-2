@@ -136,7 +136,7 @@ Based on the analysis, practical solutions include:
 
 ### **System Diagram (SL)**
 
-![System Diagram SL](https://github.com/comsci-uwc-isak/unit2_2023/assets/53995212/6161f2f6-67c5-4742-9961-e46475376370)  
+![image](https://github.com/user-attachments/assets/729b0e92-5b97-4fcf-ae8b-1104378d28f6)
 *Fig. 1: SL System Diagram*
 
 ---
