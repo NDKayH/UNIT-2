@@ -15,21 +15,6 @@ The Karuizawa Town Hall has recently announced its commitment to reducing power 
 
 ### **Components of the Solution**
 
-#### **Hardware Solution**
-
-- **Device**: **Arduino UNO Microcontroller**
-  - Cost-effective (< $6 USD)  
-  - Programmable and expandable
-
-#### **Software Solution**
-
-- **Python** due to:
-  - Open-source nature and platform independence  
-  - Ease of scalability and maintenance  
-  - Automatic memory management (High-Level Language)
-
----
-
 ### **Data Collection**
 
 #### **Hardware Solution**
