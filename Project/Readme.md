@@ -219,7 +219,7 @@ Here is a detailed **Test Plan** table for your project, which includes various 
 2. **Dictionaries & Lists** to store sensor data  
 3. **For Loops and While Loops** for data collection  
 4. **Try and Except** for error handling  
-5. **'.csv' Files** for data storage  
+5. **`.csv` Files** for data storage  
 6. **API** for real-time data access  
 7. **Requests Library** for server communication  
 8. **Matplotlib** for data visualization  
@@ -482,3 +482,19 @@ plt.show()
 ![image](https://github.com/user-attachments/assets/b0c364ea-146d-45a9-930d-48f85d5d09ab)
 
 I made the graph viewable by using **`axs`**, which allows a single figure to have multiple subplots. I used the `fig, axs = plt.subplots(2, 1, figsize=(15, 10), dpi=100)` to provide two vertically stacked subplots where they share the same x-axis, with **`axs[0]`** containing the humidity data and **`axs[1]`** containing the temperature. I used a moving average with a window size of 50 to smooth out noise in both datasets then downsampled by displaying every 100th data point to make them easier to read. This maintained general patterns while emphasizing trends more explicitly. Higher resolution was achieved by increasing the figure size and DPI, making details more clearly observable. Different colors, markers, thicker lines for the smoothed data, grid lines, bold titles, and unambiguous axis labels were added to each subplot. **`plt.tight_layout()`** was added to make sure that the subplots were spaced optimally, did not overlap, and were therefore easier to read. Together, these adjustments provide the visualization clarity, simplicity, and ease of interpretation.
+
+I also used a moving average visualization to smooth data. This was a function stored in a separate `.py` file called `myLib.py`
+
+```.py
+
+def moving_average(windowSize:int, x:list)->list:
+    x_smoothed = []
+    for i in range(0, len(x)-windowSize):
+        x_section = x[i:i+windowSize]
+        x_average = sum(x_section)/windowSize
+
+        x_smoothed.append(x_average)
+
+    return x_smoothed
+
+```
