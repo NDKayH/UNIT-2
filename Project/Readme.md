@@ -52,7 +52,7 @@ The solution will give **mathematical models** that can be used to analyze tempe
 *"…identify the fluctuations in indoor environmental conditions in homes that could potentially cause energy inefficiencies."*
 
 ---
-### **4. Comparative Analysis
+### **4. Comparative Analysis**
 
 The solution will produce a **comparative analysis** in the areas of temperature and humidity levels, including:
 
@@ -68,7 +68,7 @@ The data visualization provided will help the residents spot periods when energy
 
 ---
 
-**5. Data Storage and Redundancy**
+### **5. Data Storage and Redundancy**
 
 Data read by the DHT11 sensor will be:
 
