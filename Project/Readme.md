@@ -254,11 +254,11 @@ except KeyboardInterrupt:
 
 ```
 
-## **Data Collection Process**
+### **Data Collection Process**
 
 In order to achieve the stated goal of smooth data retrieval for indoor climate inefficiencies, the following code snippet was used. The coding is crucial in that the **temperature** and **humidity** were recorded continuously and accurately for a period of 48 hours.
 
-### Code Functionality
+#### Code Functionality
 
 The core of the script is an **if statement** that checks if this is a new or returning user and then performs the form setup accordingly:
 
@@ -273,7 +273,8 @@ The core of the script is an **if statement** that checks if this is a new or re
    - If it is a returning user, the program:
      - Requests the **username**, **password**, and the **sensor ID** associated with the user.
 - Instantiates the `http` class using the file number `j` for continued data collection and communication with the server.
-### **Continuous Data Collection Loop**
+
+#### **Continuous Data Collection Loop**
 
 Once the setup is done, a `while True` loop runs the code continuously, collecting data every **60 seconds**. This process includes:
 
@@ -301,7 +302,7 @@ In order to make data collection more reliable, the code uses **dual storage**:
 2. **Server Upload**: Provides real-time data access and redundancy by storing the data on the local server.
 This redundancy ensures that even if the connection to the server is temporarily lost, data remains intact, and the recording process continues seamlessly.
 
-### **Benefits for Energy Efficiency Optimization**
+#### **Benefits for Energy Efficiency Optimization**
 
 - **Swift Resumption**: Reduces downtime and ensures that fluctuations in indoor temperature and humidity are captured accurately.
 
