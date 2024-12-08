@@ -2,13 +2,9 @@
 
 **Noah Hoffman**
 
----
-
 ## Project Overview
 
 ### **Criteria A: Planning**
-
----
 
 ## **Problem Definition**
 
