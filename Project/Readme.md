@@ -19,6 +19,110 @@ The proposed solution is very affordable and simple, considering most households
 
 This investigation also considers long-term sustainability and adaptability. The system is designed to be scalable and maintainable, allowing for enhancements and modifications in the future if needed. For example, it could include extra sensors or more sophisticated data analysis methods to gain even deeper insights.
 
+## **Success Criteria**
+
+### **1. Visualization of Data**
+
+The solution will be able to display clear, accurate graphs depicting **temperature** and **humidity** trends in residential homes over a duration of **48 hours**. This time frame encompasses two complete day-night-day cycles, recording both daytime and nighttime variations very effectively. These graphs are intended to visually show all fluctuations and patterns that may indicate a possible inefficiency in managing indoor climate.
+
+**Quote from the problem definition:  
+*"…find the variations in the indoor environmental conditions of households that may lead to energy wastage and draw a comprehensive inference based on the data analysis."*
+
+---
+
+### **2. Economical Data Collection**
+
+The indoor environment variables will be measured with a **DHT11 sensor** connected to a **Raspberry Pi 4 Model B**. The hardware required for this experiment comprises:
+
+- **Temperature and Humidity Sensor**: Cheap (less than $5 USD) and sufficient for domestic usage.
+- **Raspberry Pi**: An affordable, extensible platform (< ¥6000).
+ 
+This setup will guarantee that ample data is gathered at the least cost and can be accommodated by the households in the budget constraint.
+ 
+**Quote from the problem definition**: 
+*"…providing a comprehensive data-driven conclusion that suggests solutions for optimizing power consumption."*
+ 
+---
+ 
+### **3. Mathematical Modeling**
+
+The solution will give **mathematical models** that can be used to analyze temperature and humidity levels. Using **linear regression** models, the data is analyzed for trends and the prediction of future conditions. This will ensure a proper understanding of indoor climate variations.
+
+**Quote from the problem definition**:  
+*"…identify the fluctuations in indoor environmental conditions in homes that could potentially cause energy inefficiencies."*
+
+---
+### **4. Comparative Analysis
+
+The solution will produce a **comparative analysis** in the areas of temperature and humidity levels, including:
+
+* **Mean** 
+* **Standard Deviation** 
+* **Minimum and Maximum Values** 
+* **Median**
+
+The data visualization provided will help the residents spot periods when energy use has not been very efficient.
+
+**Quoting the problem definition:**
+ * "…draw a comprehensive data-driven conclusion which could indicate solutions to optimize power consumption."*
+
+---
+
+**5. Data Storage and Redundancy**
+
+Data read by the DHT11 sensor will be:
+
+1. **Stored Locally** in a CSV file for easy access and backup. 
+2. **Uploaded to a Local Server** in real time to ensure data redundancy and avoid data loss during power outages.
+
+This dual approach ensures regular logging of data and data availability.
+
+**Quote from the problem definition**:
+*“…inefficient heating and cooling systems… can lead to unnecessary energy consumption and increased carbon emissions.”*
+
+---
+
+### **6. Predictive Analysis**
+
+The solution will provide a **12-hour prediction** for temperature and humidity trends based on the 48-hour data collected. This forecast will help preemptively adjust indoor conditions to optimize energy use and comfort.
+
+**Quote from the problem definition**:  
+*“…identify the fluctuations in indoor environmental conditions… and provide a comprehensive data-driven conclusion.”*
+
+---
+
+**7. Poster Presentation**
+
+A detailed **poster** will be prepared to summarize the project findings. This shall include:
+
+- Graphical representation of temperature and humidity trends  
+- Key observations from mathematical modeling and comparative analysis  
+- Practical recommendations on enhancing energy efficiency  
+
+The poster will present the data and conclusions in an accessible format for residents who may not have a technical background.
+
+**Quote from the problem definition**:
+*"…in a data-driven conclusion to proffer solutions for energy optimization."*
+
+---
+
+## **TOK Connection**
+
+### **Technology and Environmental Understanding**
+
+Application of sensors provides accurate and continuous information which, otherwise, cannot be collected manually due to fatigue and impracticability. There are also limitations to all good things, such as incurring sensor errors. This can, to a large extent be minimised by crosschecking data with other sensors or corroborating the data manually.
+
+### **Responsibilities in Handling Personal Data
+
+Data collection from private homes needs consent and ethical treatment. The digital data can easily be copied and misused; hence, the security and privacy of data collected are important for sustaining trust and respect for residents' rights.
+
+### **Cultural and Contextual Factors in Data Interpretation
+
+These might be due to the way the data is interpreted through various cultural and contextual biases. For example, comfort and the levels of acceptable temperature may differ between households. There is a potential for analysis bias leading to a conclusion that does not correctly depict the residents' experience or needs.
+
+---
+Success Criterion: Your project objectives will be explicit, measurable, and align with your problem statement. Kindly let me know if further editing is needed.
+
 ### **Components of the Solution: Data Collection**
 
 The core of the data collection process involves capturing temperature and humidity readings using the DHT11 sensor using a Raspberry Pi 4 Model B. This process ensures continuous and precise data logging.
