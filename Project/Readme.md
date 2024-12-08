@@ -174,6 +174,11 @@ This Flow chart illustrates the autentication process using the 'requests' libra
 
 This flow chart illustrates the DHT-11 Data Collection Process, from the recognition of the sensor to the collection of data to the sending the data to the server online
 
+![image](https://github.com/user-attachments/assets/8a2d70d6-64c3-45c1-b612-777cf66625b0)
+![image](https://github.com/user-attachments/assets/daf76177-5279-4cb9-9399-2630eecba897)
+
+This flow chart illustrates the procces by which I extracted data from the server and stored my sensor's data in a .csv file.
+
 ## **Record of Tasks**
 
 | **Task No** | **Planned Action**                     | **Planned Outcome**                      | **Time Estimate** | **Target Date** | **Criterion** |
