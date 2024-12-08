@@ -91,7 +91,7 @@ The solution will provide a **12-hour prediction** for temperature and humidity 
 
 ---
 
-**7. Poster Presentation**
+## **7. Poster Presentation**
 
 A detailed **poster** will be prepared to summarize the project findings. This shall include:
 
@@ -112,15 +112,15 @@ The poster will present the data and conclusions in an accessible format for res
 
 Application of sensors provides accurate and continuous information which, otherwise, cannot be collected manually due to fatigue and impracticability. There are also limitations to all good things, such as incurring sensor errors. This can, to a large extent be minimised by crosschecking data with other sensors or corroborating the data manually.
 
-### **Responsibilities in Handling Personal Data
+### **Responsibilities in Handling Personal Data**
 
 Data collection from private homes needs consent and ethical treatment. The digital data can easily be copied and misused; hence, the security and privacy of data collected are important for sustaining trust and respect for residents' rights.
 
-### **Cultural and Contextual Factors in Data Interpretation
+### **Cultural and Contextual Factors in Data Interpretation**
 
 These might be due to the way the data is interpreted through various cultural and contextual biases. For example, comfort and the levels of acceptable temperature may differ between households. There is a potential for analysis bias leading to a conclusion that does not correctly depict the residents' experience or needs.
 
-### **Components of the Solution: Data Collection**
+## **Components of the Solution:**
 
 The core of the data collection process involves capturing temperature and humidity readings using the DHT11 sensor using a Raspberry Pi 4 Model B. This process ensures continuous and precise data logging.
 
