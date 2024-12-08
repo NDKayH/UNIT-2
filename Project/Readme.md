@@ -193,6 +193,38 @@ The core of the data collection process involves capturing temperature and humid
 
 ---
 
+Here is a detailed **Test Plan** table for your project, which includes various functional and non-functional tests to ensure the system operates smoothly and meets the objectives.
+
+---
+
+## **Test Plan**
+
+| **Test No.** | **Test Type**              | **Description**                                                                                     | **Procedure**                                                                                                                          | **Expected Outcome**                                                                                                        | **Criteria** |
+|--------------|----------------------------|-----------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|--------------|
+| 1            | Functional: Sensor Reading | Verify that the DHT11 sensor reads temperature and humidity accurately.                            | Run the data collection script and compare readings with a calibrated thermometer and hygrometer.                                     | Temperature and humidity readings match the reference devices within ±2°C and ±5% RH.                                      | B            |
+| 2            | Functional: Data Logging   | Ensure data is logged correctly to the CSV file.                                                   | Run the script for 5 minutes and check the CSV file for accurate entries.                                                             | Data entries in the CSV match the real-time sensor readings.                                                               | B            |
+| 3            | Functional: Server Upload  | Verify that temperature and humidity data are uploaded to the server successfully.                 | Run the script and check the server database for new entries corresponding to sensor readings.                                        | Data appears on the server with correct timestamps, sensor IDs, and values.                                                | B            |
+| 4            | Functional: Data Redundancy| Check if data is stored both locally and on the server.                                            | Disconnect the server and ensure data is saved locally, then reconnect and check for data upload.                                     | Data is saved in the CSV during disconnection and uploaded to the server once reconnected.                                 | B            |
+| 5            | Functional: Graph Generation| Verify that graphs are generated correctly for temperature and humidity data.                      | Run the visualization script and check for the appearance of the temperature and humidity graphs.                                     | Clear and accurate graphs are generated showing trends and fluctuations.                                                   | C            |
+| 6            | Functional: Mathematical Model | Test the linear regression and moving average calculations.                                         | Run the script and inspect the plotted graphs for linear regression and smoothed data.                                                | Linear regression and moving average curves are correctly plotted alongside raw data.                                      | C            |
+| 7            | Functional: Prediction     | Ensure that 12-hour predictions are generated accurately.                                          | Run the script with 48-hour data and check the forecasted trends.                                                                     | Prediction graphs are generated with reasonable trends based on collected data.                                             | C            |
+| 8            | Non-Functional: Response Time| Measure the time taken for data collection and upload.                                              | Run the script and time the interval between each sensor reading and server upload.                                                   | Data collection and upload complete within 5-10 seconds.                                                                   | C            |
+| 9            | Non-Functional: Error Handling| Verify robustness to sensor or server disconnections.                                               | Disconnect the sensor or server during data collection and observe script behavior.                                                  | The script continues running and resumes normal operation once the connection is restored.                                  | C            |
+| 10           | Non-Functional: Data Security | Ensure secure handling of user credentials and data.                                                | Review the code to confirm no credentials are hardcoded and data is transmitted securely.                                             | No credentials in the code, and secure HTTP requests (if applicable).                                                     | C            |
+| 11           | Non-Functional: Load Testing | Test how the system handles extended data collection over 48 hours.                                 | Run the script continuously for 48 hours and monitor performance.                                                                     | System runs without crashes or data loss, and data is logged correctly throughout.                                          | C            |
+| 12           | Non-Functional: Visualization Readability | Ensure graphs are clear, readable, and not cluttered.                                              | Generate graphs with large datasets and evaluate readability.                                                                         | Graphs are easy to interpret, with distinct colors, labels, and legends.                                                  | D            |
+| 13           | Functional: Poster Presentation | Verify the poster accurately summarizes findings and recommendations.                               | Review the poster for completeness, clarity, and accuracy of data.                                                                    | Poster includes clear graphs, mathematical models, analysis, and recommendations.                                          | D            |
+
+---
+
+### **Key Criteria References**
+
+- **B**: Data Collection and Storage  
+- **C**: Data Analysis and Visualization  
+- **D**: Presentation and Communication of Results  
+
+This test plan ensures that your system meets both functional and non-functional requirements, delivering accurate data collection, reliable analysis, and clear communication of results. Let me know if any adjustments are needed!
+
 ## **Criteria C: Development**
 
 ### **Techniques Used**
