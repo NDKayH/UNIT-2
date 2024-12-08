@@ -80,7 +80,7 @@ The solution will provide a **12-hour prediction** for temperature and humidity 
 **Quote from the problem definition**:  
 *“…identify the fluctuations in indoor environmental conditions… and provide a comprehensive data-driven conclusion.”*
 
-## **7. Poster Presentation**
+### **7. Poster Presentation**
 
 A detailed **poster** will be prepared to summarize the project findings. This shall include:
 
