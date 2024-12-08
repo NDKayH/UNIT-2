@@ -5,15 +5,18 @@
 
 ## **Problem Definition**
 
-The Karuizawa Town Hall has recently announced its commitment to reducing power consumption, promoting sustainability. Research shows that indoor temperature and humidity levels significantly impact energy efficiency and residents’ comfort, especially in winter. Inefficient heating and cooling systems, combined with a lack of awareness about power conservation (like ensuring windows and doors are closed), lead to unnecessary energy consumption and increased carbon emissions.
-
-**Challenge**: Identify fluctuations in indoor environmental conditions causing energy inefficiencies and provide a comprehensive, data-driven solution for optimizing power consumption.
+The Karuizawa Town Hall has recently announced its commitment to reducing power consumption which will hopefully reduce the environmental impact in Karuizawa, promoting sustainability. Research has shown that indoor temperature and humidity levels significantly impact energy efficiency and Karuizawa residents’ comfort, especially in the winter seasons. Inefficient heating and cooling systems in combination with a lack of awareness about the benefits of power conservation in the form of making sure windows and doors are closed in homes can lead to unnecessary energy consumption and increased carbon emissions. The challenge I have taken is to identify the fluctuations in indoor environmental conditions in homes that could potentially cause energy inefficiencies and provide a comprehensive data-driven conclusion that suggests solutions for optimizing power consumption. 
 
 ## **Proposed Solution**
+
+Considering the client’s needs and budgetary constraints, an effective solution involves using the DHT11 sensor to monitor temperature and humidity levels in residential rooms over a 48-hour period. The DHT11 sensor, priced at under $5 USD, offers adequate precision (Temperature Range: 0°C to 50°C [well within the realistic range], Humidity Range: 20% to 90%) and uses simple SPI communication, making it suitable for large-scale deployment.
+Here's a revised version of your solution components section, incorporating the use of the Flask library, a 5-second data collection interval, data upload to a local server, and graph analysis with Matplotlib. This is formatted for a professional Google Doc or project report:
 
 ### **Components of the Solution**
 
 ### **Data Collection**
+
+The core of the data collection process involves capturing temperature and humidity readings using the DHT11 sensor using a Raspberry Pi 4 Model B. This process ensures continuous and precise data logging.
 
 #### **Hardware Solution**
 
