@@ -164,7 +164,15 @@ The core of the data collection process involves capturing temperature and humid
 ![image](https://github.com/user-attachments/assets/729b0e92-5b97-4fcf-ae8b-1104378d28f6)
 *Fig. 1: SL System Diagram*
 
----
+### **Flow Charts**
+
+![image](https://github.com/user-attachments/assets/e2623887-c2ae-482c-8b22-b53e326c2965)
+
+This Flow chart illustrates the autentication process using the 'requests' library, meant to allow one to eventually access the stored data in the local server. 
+
+![image](https://github.com/user-attachments/assets/90e557b4-9d6e-40ec-83d7-5c051c4d3cdc)
+
+This flow chart illustrates the DHT-11 Data Collection Process, from the recognition of the sensor to the collection of data to the sending the data to the server online
 
 ## **Record of Tasks**
 
