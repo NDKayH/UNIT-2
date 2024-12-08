@@ -28,8 +28,6 @@ The solution will be able to display clear, accurate graphs depicting **temperat
 **Quote from the problem definition:  
 *"…find the variations in the indoor environmental conditions of households that may lead to energy wastage and draw a comprehensive inference based on the data analysis."*
 
----
-
 ### **2. Economical Data Collection**
 
 The indoor environment variables will be measured with a **DHT11 sensor** connected to a **Raspberry Pi 4 Model B**. The hardware required for this experiment comprises:
@@ -41,9 +39,7 @@ This setup will guarantee that ample data is gathered at the least cost and can 
  
 **Quote from the problem definition**: 
 *"…providing a comprehensive data-driven conclusion that suggests solutions for optimizing power consumption."*
- 
----
- 
+  
 ### **3. Mathematical Modeling**
 
 The solution will give **mathematical models** that can be used to analyze temperature and humidity levels. Using **linear regression** models, the data is analyzed for trends and the prediction of future conditions. This will ensure a proper understanding of indoor climate variations.
@@ -51,7 +47,6 @@ The solution will give **mathematical models** that can be used to analyze tempe
 **Quote from the problem definition**:  
 *"…identify the fluctuations in indoor environmental conditions in homes that could potentially cause energy inefficiencies."*
 
----
 ### **4. Comparative Analysis**
 
 The solution will produce a **comparative analysis** in the areas of temperature and humidity levels, including:
@@ -66,8 +61,6 @@ The data visualization provided will help the residents spot periods when energy
 **Quoting the problem definition:**
  * "…draw a comprehensive data-driven conclusion which could indicate solutions to optimize power consumption."*
 
----
-
 ### **5. Data Storage and Redundancy**
 
 Data read by the DHT11 sensor will be:
@@ -80,16 +73,12 @@ This dual approach ensures regular logging of data and data availability.
 **Quote from the problem definition**:
 *“…inefficient heating and cooling systems… can lead to unnecessary energy consumption and increased carbon emissions.”*
 
----
-
 ### **6. Predictive Analysis**
 
 The solution will provide a **12-hour prediction** for temperature and humidity trends based on the 48-hour data collected. This forecast will help preemptively adjust indoor conditions to optimize energy use and comfort.
 
 **Quote from the problem definition**:  
 *“…identify the fluctuations in indoor environmental conditions… and provide a comprehensive data-driven conclusion.”*
-
----
 
 ## **7. Poster Presentation**
 
