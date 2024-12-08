@@ -313,7 +313,7 @@ The script does use a `while True:` loop to collect data every **5 seconds conti
 
    - Temperature and Humidity readings by the script are obtained from the DHT11 sensor with the help of `Adafruit_DHT.read_retry(DHT_SENSOR, DHT_PIN)`.
 
-2. **Timestamp Generation:
+2. **Timestamp Generation**:
 
 - The current timestamp is recorded in **ISO 8601 format** using `datetime.now().isoformat()`.
 3. **Data Upload to Server**:  
