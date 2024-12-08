@@ -25,7 +25,7 @@ This investigation also considers long-term sustainability and adaptability. The
 
 The solution will be able to display clear, accurate graphs depicting **temperature** and **humidity** trends in residential homes over a duration of **48 hours**. This time frame encompasses two complete day-night-day cycles, recording both daytime and nighttime variations very effectively. These graphs are intended to visually show all fluctuations and patterns that may indicate a possible inefficiency in managing indoor climate.
 
-**Quote from the problem definition:  
+**Quote from the problem definition**:  
 *"…find the variations in the indoor environmental conditions of households that may lead to energy wastage and draw a comprehensive inference based on the data analysis."*
 
 ### **2. Economical Data Collection**
