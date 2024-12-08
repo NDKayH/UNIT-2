@@ -376,5 +376,6 @@ This code contributes to the project's aim of identifying and reducing **energy 
 
 - **Reduced Carbon Emissions**  
 - **Improved Energy Efficiency**
+
 This approach allows residents to make informed choices to optimize their indoor climate and support environmental sustainability.
 
