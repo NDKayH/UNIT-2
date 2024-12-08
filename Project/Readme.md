@@ -288,60 +288,86 @@ except KeyboardInterrupt:
 ```
 
 ### **Data Collection Process**
+Following is a piece of code that was developed and deployed to ensure smooth and continuous data retrieval. This script is essential for retrieving accurate and consistent temperature and humidity readings over a 48-hour period and beyond.
 
-In order to achieve the stated goal of smooth data retrieval for indoor climate inefficiencies, the following code snippet was used. The coding is crucial in that the **temperature** and **humidity** were recorded continuously and accurately for a period of 48 hours.
+#### **Code Functionality
 
-#### Code Functionality
+The core functionality involves continuous gathering of data through a **DHT11 sensor** and uploading data to a **local server**, with the creation of a **local CSV backup.** It includes **authenticating**, **collecting the data, and storing it.**
 
-The core of the script is an **if statement** that checks if this is a new or returning user and then performs the form setup accordingly:
+#### **Authenticating and Setup**
 
-1. **New User Creation** 
+Before actual data collection starts, the script performs the following setup:
 
-   - If a user is new, the code proceeds as follows: 
-    It initiates a new CSV with their collected data.
-    Takes from the user a **username, password, sensor location** and a file number j.
-- Uses these inputs to instantiate the `http` class, which handles API-related interactions with the **local server** hosting the indoor climate data.
-2. **Returning User Setup**:  
+1. **User Authentication**:
 
-   - If it is a returning user, the program:
-     - Requests the **username**, **password**, and the **sensor ID** associated with the user.
-- Instantiates the `http` class using the file number `j` for continued data collection and communication with the server.
+- The function `get_access_token()` provides an **access token** which is retrieved by sending a POST request to the server with the provided **username** and **password**. 
+   - The access token should be used for authentication when uploading data to the server subsequently.
+2. **Headers Configuration**: 
 
-#### **Continuous Data Collection Loop**
+   - The token was placed in the **headers** to communicate securely with the server.
+#### **Continuously Collecting Data Loop
 
-Once the setup is done, a `while True` loop runs the code continuously, collecting data every **60 seconds**. This process includes:
+The script does use a `while True:` loop to collect data every **5 seconds continuously.** This ensures the smooth running of the system all the time for minute capture of temperature and humidity fluctuation. The process involves, in each iteration of the loop:
 
-1. **Authorization Key Retrieval**:
+1. **Sensor Data Reading**:  
 
-It retrieves an access token to communicate securely with the server using the `get_token()` method. 2. **Upload Data and Store**:  
+   - Temperature and Humidity readings by the script are obtained from the DHT11 sensor with the help of `Adafruit_DHT.read_retry(DHT_SENSOR, DHT_PIN)`.
 
-   The `update_all_sensors()` method:
-   - Read **temperature** and **humidity** from the **DHT11 sensor**.
-   - Upload the readings on the local server using the access token.
-   - Append data in a local **CSV file** for redundancy and easy access.
-**Reasoning for `while True` Loop**
+2. **Timestamp Generation:
 
-Using a continuous `while True` loop allows the program to keep collecting data beyond the starting 48-hour period and easily handle problems that may arise during the execution. This is proper because:
+- The current timestamp is recorded in **ISO 8601 format** using `datetime.now().isoformat()`.
+3. **Data Upload to Server**:  
 
-- **Robustness to Errors**: Whether there is an issue on the server side or even one of the sensors disconnected, the loop will restart quickly once the problem has been resolved.
+   - If the sensor readings are valid (i.e., not `None`), the script creates two payloads:  
+     - **Temperature Payload**: Contains the timestamp, sensor ID, and temperature value (rounded to one decimal place).
+- **Humidity Payload**: It contains the timestamp, sensor ID, and humidity value rounded to the nearest whole number.  
+   - Each payload is sent to the server over a **POST request**.
+4. **Local CSV Storage**:  
 
-- **Simplicity and Efficiency**: The addition of conditional checks within the loop would add computational overhead, as well as possible points of failure.
-### **Data Redundancy and Reliability**
+   - The data also gets printed to the console for easy monitoring at runtime.
+5. **Delay Between Readings**:
 
-In order to make data collection more reliable, the code uses **dual storage**:
+- A **5-second delay** is added using `time.sleep(5)` to manage the frequency of data collection.
+### **Reasoning for the `while True` Loop**
 
-1. **Local CSV File**: Allows data to be stored locally on the device, and prevents data loss in case there is a problem with connectivity.
+The continuous `while True` loop is essential for maintaining uninterrupted data collection. This approach is beneficial because:
 
-2. **Server Upload**: Provides real-time data access and redundancy by storing the data on the local server.
-This redundancy ensures that even if the connection to the server is temporarily lost, data remains intact, and the recording process continues seamlessly.
+1. **Robustness to Errors**:
 
-#### **Benefits for Energy Efficiency Optimization**
+- If the server has an issue or the sensor is disconnected, the loop allows the system to fast **resume data collection** once the issue is fixed.
+2. **Keep the loop simple**: 
 
-- **Swift Resumption**: Reduces downtime and ensures that fluctuations in indoor temperature and humidity are captured accurately.
+   - Avoiding adding conditional checks in the loop means that no **computational overhead** can be added and the potential failure points are reduced.
+#### **Data Redundancy and Reliability**
 
-- **Comprehensive Data Logging**: Enables continuous monitoring to pinpoint inefficiencies in heating and cooling systems.
-- **Efficient Data Storage**: The combination of local and server-based storage ensures that data integrity is maintained and can support reliable analysis for optimizing power consumption.
-This provides the overall approach to solving the identified problem: to identify and reduce energy inefficiencies in homes at Karuizawa and thus contribute to **sustainability** and **lower carbon emissions**.
+To be sure the data is collected, the script uses **double storage**:
 
+1. **Local CSV Storage**: 
 
+   - The fact that data is stored in a local repository will not imply any loss of data resultant from **network connectivity problems**.
+2. **Server Upload**: 
+
+   - Real-time recording of data on a **local server** to gain redundancy and make access easy to the most recent record.
+This way, no matter which storage fails to work, data remains available with the continuity of recording unaffected.
+
+**Benefits for Energy Efficiency Optimization**
+
+1. **Quick Recovery**:  
+
+   - This minimizes the amount of time the device is down and ensures that crucial fluctuations in temperature and humidity are captured accurately.
+2. **Continuous Data Recording**:  
+
+   - The recording allows for detailed insight into potential inefficiencies in **heating and cooling systems**.
+3. **Efficient Data Storage:
+
+- Both local and server-based storage maintains **data integrity** to support reliable analysis for optimizing power consumption.
+#### **Overall Impact**
+
+This code contributes to the project's aim of identifying and reducing **energy inefficiencies** in homes at Karuizawa. By harnessing continuous data collection, redundancy, and reliable storage, the solution contributes to:
+
+- **Sustainability**  
+
+- **Reduced Carbon Emissions**  
+- **Improved Energy Efficiency**
+This approach allows residents to make informed choices to optimize their indoor climate and support environmental sustainability.
 
