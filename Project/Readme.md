@@ -1,3 +1,5 @@
+![image](https://github.com/user-attachments/assets/1f39e71d-9d2a-4e8f-a032-ac97bb7419ff)
+
 # Unit 2: Optimizing Indoor Climate for Energy Efficiency and Environmental Sustainability in Karuizawa
 **Noah Hoffman**
 
