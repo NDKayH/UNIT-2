@@ -43,43 +43,16 @@ The core of the data collection process involves capturing temperature and humid
   - Detect excessive heating/cooling  
   - Identify high humidity levels causing increased air conditioning use
 
----
-
-### **Identifying Energy Inefficiencies**
-
-- **Insights**:
-  - Overuse of heating systems during mild temperatures  
-  - Excessive air conditioning caused by high humidity  
-  - Inconsistent temperature control due to external factors  
-
-**Note**: Heaters set to level 3 (out of 5), and air conditioning turned off.
-
----
-
-## **Recommendations**
-
-Based on the analysis, practical solutions include:
-
-- **Improving Ventilation** to regulate indoor climate naturally  
-- **Adjusting Thermostat Settings** for energy efficiency  
-- **Using Humidifiers/Dehumidifiers** for optimal humidity  
-- **Periodic Monitoring** for ongoing optimization
-
----
-
 ### **Technical Stack**
 
 - **Data Collection**: Python, DHT11 Sensor  
 - **Data Visualization**: Matplotlib, NumPy  
 - **Data Storage**: CSV, Local Server  
 
----
 
 ## **Design Statement**
 
 *Our team is developing a Python-based system using a DHT11 sensor to monitor indoor temperature and humidity levels. Data will be recorded over 48 hours and stored in a CSV database. The goal is to identify fluctuations in indoor conditions and provide data-driven solutions to optimize power consumption in Karuizawa homes.*
-
----
 
 ## **Success Criteria**
 
