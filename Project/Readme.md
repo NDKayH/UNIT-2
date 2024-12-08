@@ -492,61 +492,54 @@ def moving_average(windowSize:int, x:list)->list:
     return x_smoothed
 
 ```
+## **Analysis and Conclusion**
 
-## **Conclusions for the Study**
+From the data collected over a 48-hour period, it is evident that indoor temperature and humidity can be easily influenced by factors such as the condition of windows and doors, the operation of heating systems, and the current weather. These factors reveal trends in inefficiencies, including significant energy waste during prolonged heating system use and issues with unsealed windows and doors.
 
-### **1. Temperature and Humidity Trends**
-- **Observation**: From the gathered data and visualization, oscillations in temperature and humidity readings are well marked within the 48 hours.
-- **Insight**: Oscillations of indoor climatic conditions can be linked with external factors such as:
- - **On/Off condition of heating systems**
-- **Open/closed status of windows and doors**
- - **Weather conditions outdoors**
-- **Impact**: These insights allow for the identification of periods where **inefficient heating or cooling** could have resulted in wastage of energy.
+Mathematical models like linear regression and moving averages are effective tools for analyzing trends in indoor climate conditions and can help predict future changes. By using these models, households can anticipate shifts in temperature and humidity, allowing them to adjust their heating or cooling schedules accordingly. This predictive ability supports proactive energy management, helping residents optimize power usage and reduce unnecessary carbon emissions. The proposed solution is cost-effective and can be easily implemented with a DHT11 sensor and Raspberry Pi, making it scalable for widespread use in homes throughout Karuizawa.
 
-### **2. Anomaly Detection**
-- **Observation**: The analysis detects anomalies such as abrupt temperature drops or increases.
-- **Insight**: Such anomalies could be caused by:
- - **Accidental leaving open of windows or doors**
-- **Running heating systems for longer than necessary**
-- **Impact**: Identifying these is the first step in implementing appropriate **corrective measures** for avoiding energy waste.
+Given these findings, the I strongly recommend that a community-wide initiative be launched through the Karuizawa Town Hall to promote awareness of energy-saving practices. This program should encourage the installation of basic monitoring systems for indoor temperature and humidity, provide guidelines for sealing windows and doors, and suggest efficient heating schedules. These measures will play a significant role in helping Karuizawa reduce power consumption and minimize its environmental impact while fostering a culture of sustainability among its residents.
 
-### **3. Mathematical Modeling and Predictive Analysis**
-- **Observation**: Linear regression and moving average models turn out to be very accurate in identifying the trend and thereby predicting temperature and humidity in the next 12 hours.
-- **Insight**: These models allow us to foresee **future conditions** and schedule heating or cooling accordingly.
-- **Impact**: Predictive analysis helps in **preemptively optimizing indoor climate**, reducing energy consumption.
+## **Sources**
 
-### **4. Comparative Analysis and Data Insights**
-- **Observation**: Statistical analysis of the data provides key metrics:
-  - **Mean**: Average temperature and humidity levels.
-  - **Standard Deviation**: Measure of variability in the readings.
-  - **Minimum and Maximum Values**: Identify extremes that may indicate inefficiencies.
-  - **Median**: Central tendency of the data.
-- **Impact**: These insights help in understanding the **range and consistency** of indoor conditions, allowing for better climate management strategies.
+- **Matplotlib Documentation**:  
+  Comprehensive guide for creating visualizations and graphs in Python.  
+  - *Website*: [https://matplotlib.org/stable/contents.html](https://matplotlib.org/stable/contents.html)
 
-### **5. Data Redundancy and Reliability**
-- **Observation**: Data is stored both **locally (CSV)** and on the **local server**.
-- **Insight**: This redundancy ensures that no data is lost during **network failures** or **power outages**.
-- **Impact**: Reliable data storage supports continuous monitoring and accurate analysis.
+- **NumPy Documentation**:  
+  Essential for performing mathematical operations, array manipulations, and data analysis.  
+  - *Website*: [https://numpy.org/doc/](https://numpy.org/doc/)
 
-### **6. Cost-Effective Solution
-- **Observation**: The hardware components used in this project, namely the DHT11 sensor and Raspberry Pi 4 Model B, are fairly inexpensive and easily available.
-- **Insight**: The project is within a decent budget with very accurate results.
-- **Impact**: The low cost of the setup makes it feasible for **large-scale deployment** in residential areas.
+- **Requests Library Documentation**:  
+  For handling HTTP requests to interact with servers (e.g., data uploads).  
+  - *Website*: [https://docs.python-requests.org/en/latest/](https://docs.python-requests.org/en/latest/)
 
-### **7. Practical Recommendations**
-- **Recommendation**: Based on the data analysis, the following actions are recommended to achieve better energy efficiency:
-- **Seal Windows and Doors**: Ensure windows and doors are closed to prevent heat loss.
-  - **Optimize Heating Schedules**: Avoid leaving heating systems on for extended periods.
-  - **Monitor Humidity Levels**: Maintain optimal humidity levels to reduce the need for additional heating or cooling.
-  - **Regular Monitoring**: Use continuous monitoring to identify and address inefficiencies promptly.
+- **Stack Overflow**:  
+  A community-driven forum for troubleshooting code issues and finding best practices.  
+  - *Website*: [https://stackoverflow.com/](https://stackoverflow.com/)
 
-### **8. Effective Communication**
-- **Observation**: The poster and visualizations give clear, accessible summaries of the data and findings.
-- **Insight**: The results are presented in a way that **non-technical stakeholders** can understand and act upon.
-- **Impact**: This ensures the recommendations can be effectively implemented by residents.
+- **Kaggle**:  
+  Community for data science, where you can find datasets and examples for data analysis and visualization.  
+  - *Website*: [https://www.kaggle.com/](https://www.kaggle.com/)
 
----
+- **Github Repositories**:  
+  Search for repositories containing DHT11 sensor implementations and Python data visualization scripts.  
+  - *Website*: [https://github.com/search?q=DHT11+Python](https://github.com/search?q=DHT11+Python)
+
+- **Open Source Data Visualization Repositories**:  
+  Repositories demonstrating the use of Matplotlib, Seaborn, and Plotly for visualizing sensor data.  
+  - *Website*: [https://github.com/topics/data-visualization](https://github.com/topics/data-visualization)
+
+- **YouTube Channels**:  
+  - **Programming with Mosh**: Tutorials on Python coding and best practices.  
+    - *Channel*: [https://www.youtube.com/c/programmingwithmosh](https://www.youtube.com/c/programmingwithmosh)  
+  - **Tech with Tim**: Python, Raspberry Pi, and sensor projects.  
+    - *Channel*: [https://www.youtube.com/c/TechWithTim](https://www.youtube.com/c/TechWithTim)  
+  - **Corey Schafer**: Detailed Python tutorials, including data visualization.  
+    - *Channel*: [https://www.youtube.com/c/Coreyms](https://www.youtube.com/c/Coreyms)
+
+- **Reddit Communities**:  
+  - **r/Python**: 
+    - *Link*: [https://www.reddit.com/r/Python/](https://www.reddit.com/r/Python/)  
+  - **r/raspberry_pi**: 
  
-## **Summary**
-
-Your study successfully identifies the contributing factors to indoor climate inefficiencies, as well as data-driven solutions, in order to optimize energy consumption in homes in Karuizawa. Visualization merged with statistical analysis, predictive modeling, and practical recommendations provide an integrated approach toward energy efficiency and sustainability.
