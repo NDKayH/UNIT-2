@@ -507,6 +507,20 @@ def moving_average(windowSize:int, x:list)->list:
     return x_smoothed
 
 ```
+
+## **Data Analysis**
+
+The data gathered over a 48-hour period using the DHT11 sensor offers valuable insights into the temperature and humidity conditions of the monitored space. The main objective of this analysis was to pinpoint fluctuations in indoor environmental conditions that could result in energy inefficiencies and to assess whether these conditions meet optimal standards for energy conservation and environmental sustainability.
+
+**Temperature Analysis:**  
+The data shows that temperature levels vary significantly due to factors such as the operation of heating systems, the status of windows and doors, and external weather conditions. For example, instances where heating systems were left running for long periods resulted in higher indoor temperatures, while open windows caused rapid drops in temperature. These irregularities indicate that improved management of these factors could enhance energy efficiency. The temperature readings typically range from 0°C to 50°C, which is consistent with the DHT11 sensor’s specifications. However, the observed spikes and drops in temperature suggest potential inefficiencies that, if addressed, could lead to reduced energy consumption and lower carbon emissions.
+
+**Humidity Analysis:**  
+The humidity data collected varied between 20% and 90%, which aligns with the capabilities of the DHT11 sensor. Humidity levels also changed based on whether windows were open and the operation of heating systems. For instance, when windows were left open, humidity levels decreased, whereas closed environments with active heating systems retained higher humidity. These results underscore the importance of maintaining optimal humidity levels to ensure comfort and minimize unnecessary energy use.
+
+**Identified Patterns and Anomalies:**  
+The analysis revealed patterns where inefficient heating practices and open windows caused notable fluctuations in temperature and humidity. These inefficiencies lead to increased energy consumption and a greater environmental impact. Anomalies were detected.
+
 ## **Analysis and Conclusion**
 
 From the data collected over a 48-hour period, it is evident that indoor temperature and humidity can be easily influenced by factors such as the condition of windows and doors, the operation of heating systems, and the current weather. These factors reveal trends in inefficiencies, including significant energy waste during prolonged heating system use and issues with unsealed windows and doors.
