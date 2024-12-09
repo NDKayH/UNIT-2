@@ -515,6 +515,35 @@ Mathematical models like linear regression and moving averages are effective too
 
 Given these findings, the I strongly recommend that a community-wide initiative be launched through the Karuizawa Town Hall to promote awareness of energy-saving practices. This program should encourage the installation of basic monitoring systems for indoor temperature and humidity, provide guidelines for sealing windows and doors, and suggest efficient heating schedules. These measures will play a significant role in helping Karuizawa reduce power consumption and minimize its environmental impact while fostering a culture of sustainability among its residents.
 
+## **Recommendations**
+
+1. **Integrate Additional Sensors**  
+   Add various types of sensors, such as CO₂ sensors, motion detectors, and light sensors, to gain a more complete picture of indoor climate conditions. This can help uncover relationships between air quality, occupancy, and energy consumption.
+
+2. **Improve Data Logging Frequency**  
+   Increase how often data is collected to capture more detailed fluctuations in temperature and humidity. This will provide deeper insights into short-term changes and help pinpoint subtle inefficiencies.
+
+3. **Network Stability Enhancements**  
+   Tackle connectivity issues by utilizing a more dependable network or implementing offline data storage that syncs with the server once the connection is restored. This ensures that no data is lost during disconnections.
+
+4. **Automate Window and HVAC Control**  
+   Connect the sensor system with smart actuators to automatically adjust heating, cooling, and window status based on real-time data. This can enhance energy efficiency without requiring manual adjustments.
+
+5. **Enhanced Data Visualization**  
+   Utilize interactive dashboards, such as those created with **Dash** or **Power BI**, to display real-time and historical data. This makes it easier to visualize trends, identify anomalies, and effectively communicate findings.
+
+6. **Machine Learning for Anomaly Detection**  
+   Use machine learning models to predict and identify anomalies in temperature and humidity levels. This can provide early warnings for issues like open windows or malfunctioning heating systems.
+
+7. **Battery Backup for Sensors**  
+   Ensure that sensors are equipped with battery backups to maintain data collection during power outages, ensuring continuity and reliability.
+
+8. **User Alerts and Notifications**  
+   Create a notification system that alerts users when temperature or humidity levels stray from optimal ranges. This enables timely action to maintain efficiency.
+
+9. **Weather Data Integration**  
+   Incorporate external weather data to enhance the system's ability to adjust to changing environmental conditions.
+
 ## **Sources**
 
 - **Matplotlib Documentation**:  
