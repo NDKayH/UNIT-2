@@ -531,32 +531,7 @@ Given these findings, the I strongly recommend that a community-wide initiative 
 
 ## **Recommendations**
 
-1. **Integrate Additional Sensors**  
-   Add various types of sensors, such as CO₂ sensors, motion detectors, and light sensors, to gain a more complete picture of indoor climate conditions. This can help uncover relationships between air quality, occupancy, and energy consumption.
-
-2. **Improve Data Logging Frequency**  
-   Increase how often data is collected to capture more detailed fluctuations in temperature and humidity. This will provide deeper insights into short-term changes and help pinpoint subtle inefficiencies.
-
-3. **Network Stability Enhancements**  
-   Tackle connectivity issues by utilizing a more dependable network or implementing offline data storage that syncs with the server once the connection is restored. This ensures that no data is lost during disconnections.
-
-4. **Automate Window and HVAC Control**  
-   Connect the sensor system with smart actuators to automatically adjust heating, cooling, and window status based on real-time data. This can enhance energy efficiency without requiring manual adjustments.
-
-5. **Enhanced Data Visualization**  
-   Utilize interactive dashboards, such as those created with **Dash** or **Power BI**, to display real-time and historical data. This makes it easier to visualize trends, identify anomalies, and effectively communicate findings.
-
-6. **Machine Learning for Anomaly Detection**  
-   Use machine learning models to predict and identify anomalies in temperature and humidity levels. This can provide early warnings for issues like open windows or malfunctioning heating systems.
-
-7. **Battery Backup for Sensors**  
-   Ensure that sensors are equipped with battery backups to maintain data collection during power outages, ensuring continuity and reliability.
-
-8. **User Alerts and Notifications**  
-   Create a notification system that alerts users when temperature or humidity levels stray from optimal ranges. This enables timely action to maintain efficiency.
-
-9. **Weather Data Integration**  
-   Incorporate external weather data to enhance the system's ability to adjust to changing environmental conditions.
+Integrate additional sensors by adding various types of sensors, such as CO₂ sensors, motion detectors, and light sensors, to gain a more complete picture of indoor climate conditions. This can help uncover relationships between air quality, occupancy, and energy consumption. Improve data logging frequency by increasing how often data is collected to capture more detailed fluctuations in temperature and humidity. This will provide deeper insights into short-term changes and help pinpoint subtle inefficiencies. Tackle connectivity issues with network stability enhancements by utilizing a more dependable network or implementing offline data storage that syncs with the server once the connection is restored. This ensures that no data is lost during disconnections. Automate window and HVAC control by connecting the sensor system with smart actuators to automatically adjust heating, cooling, and window status based on real-time data. This can enhance energy efficiency without requiring manual adjustments. Utilize enhanced data visualization through interactive dashboards, such as those created with Dash or Power BI, to display real-time and historical data. This makes it easier to visualize trends, identify anomalies, and effectively communicate findings. Use machine learning for anomaly detection to predict and identify anomalies in temperature and humidity levels. This can provide early warnings for issues like open windows or malfunctioning heating systems. Ensure battery backup for sensors to maintain data collection during power outages, ensuring continuity and reliability. Create user alerts and notifications with a system that alerts users when temperature or humidity levels stray from optimal ranges, enabling timely action to maintain efficiency. Finally, incorporate weather data integration to enhance the system's ability to adjust to changing environmental conditions..
 
 ## **Sources**
 
