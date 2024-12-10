@@ -82,24 +82,9 @@ The core of the data collection process involves capturing temperature and humid
 - **Data Visualization**: Matplotlib, NumPy  
 - **Data Storage**: CSV, Local Server  
 
-
-## **Design Statement**
-
-*Our team is developing a Python-based system using a DHT11 sensor to monitor indoor temperature and humidity levels. Data will be recorded over 48 hours and stored in a CSV database. The goal is to identify fluctuations in indoor conditions and provide data-driven solutions to optimize power consumption in Karuizawa homes.*
-
-### **Comparative Analysis**
-
-- **Insights**:  
-  - **Mean**  
-  - **Standard Deviation**  
-  - **Min/Max Values**  
-  - **Median**  
-
-**Issue Tackled**: Comprehensive data insights for climate optimization.
-
 ### **Prediction**
 
-- **12-Hour Forecast** based on 48-hour data.
+- **Linear and Quadratic Model** based on 48-hour data.
 
 **Issue Tackled**: Anticipating conditions to optimize energy use.
 
