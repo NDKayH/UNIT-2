@@ -21,63 +21,15 @@ This investigation also considers long-term sustainability and adaptability. The
 
 ## **Success Criteria**
 
-### **1. Visualization of Data**
-
-The solution will be able to display clear, accurate graphs depicting **temperature** and **humidity** trends in residential homes over a duration of **48 hours**. This time frame encompasses two complete day-night-day cycles, recording both daytime and nighttime variations very effectively. These graphs are intended to visually show all fluctuations and patterns that may indicate a possible inefficiency in managing indoor climate.
-
-**Quote from the problem definition**:  
-*"…find the variations in the indoor environmental conditions of households that may lead to energy wastage and draw a comprehensive inference based on the data analysis."*
-
-### **2. Economical Data Collection**
-
-The indoor environment variables will be measured with a **DHT11 sensor** connected to a **Raspberry Pi 4 Model B**. The hardware required for this experiment comprises:
-
-- **Temperature and Humidity Sensor**: Cheap (less than $5 USD) and sufficient for domestic usage.
-- **Raspberry Pi**: An affordable, extensible platform (< ¥6000).
- 
-This setup will guarantee that ample data is gathered at the least cost and can be accommodated by the households in the budget constraint.
- 
-**Quote from the problem definition**: 
-*"…providing a comprehensive data-driven conclusion that suggests solutions for optimizing power consumption."*
-  
-### **3. Mathematical Modeling**
-
-The solution will give **mathematical models** that can be used to analyze temperature and humidity levels. Using **linear regression** models, the data is analyzed for trends and the prediction of future conditions. This will ensure a proper understanding of indoor climate variations.
-
-**Quote from the problem definition**:  
-*"…identify the fluctuations in indoor environmental conditions in homes that could potentially cause energy inefficiencies."*
-
-### **4. Data Storage and Redundancy**
-
-Data read by the DHT11 sensor will be:
-
-1. **Stored Locally** in a CSV file for easy access and backup. 
-2. **Uploaded to a Local Server** in real time to ensure data redundancy and avoid data loss during power outages.
-
-This dual approach ensures regular logging of data and data availability.
-
-**Quote from the problem definition**:
-*“…inefficient heating and cooling systems… can lead to unnecessary energy consumption and increased carbon emissions.”*
-
-### **6. Predictive Analysis**
-
-The solution will provide a **12-hour prediction** for temperature and humidity trends based on the 48-hour data collected. This forecast will help preemptively adjust indoor conditions to optimize energy use and comfort.
-
-**Quote from the problem definition**:  
-*“…identify the fluctuations in indoor environmental conditions… and provide a comprehensive data-driven conclusion.”*
-
-### **7. Poster Presentation**
-
-A detailed **poster** will be prepared to summarize the project findings. This shall include:
-
-- Graphical representation of temperature and humidity trends  
-- Key observations from mathematical modeling and comparative analysis  
-- Practical recommendations on enhancing energy efficiency  
-
-The poster will present the data and conclusions in an accessible format for residents who may not have a technical background.
-
-**Quote from the problem definition**:
-*"…in a data-driven conclusion to proffer solutions for energy optimization."*
+1. The solution will be able to display clear, accurate graphs depicting **temperature** and **humidity** trends in residential homes over a duration of **48 hours**.
+2. The indoor environment variables will be successfully measured with a **DHT11 sensor** connected to a **Raspberry Pi 4 Model B**.
+3. Data read by the DHT11 sensor will be:
+   * **Stored Locally** in a CSV file for easy access and backup.
+   * **Uploaded to a Local Server** in real time to ensure data redundancy and avoid data loss during power outages.
+4. A detailed **poster** will be prepared to summarize the project findings. This shall include:
+   * Graphical representation of temperature and humidity trends
+   * Key observations from mathematical modeling and comparative analysis
+   * Practical recommendations on enhancing energy efficiency
 
 ## **TOK Connection**
 
