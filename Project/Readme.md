@@ -126,6 +126,12 @@ This flow chart illustrates the procces by which I extracted data from the serve
 | 4           | Create Test Graphs                     | Analyze data with Matplotlib             | 1 hour           | Nov 29          | C            |
 | 5           | Develop Visualizations                 | Graphs of collected data                 | 2 hours          | Dec 7           | C            |
 | 6           | Create Project Poster                  | Summarize findings                       | 1 hour           | Dec 8           | D            |
+| 7           | Write Problem Definition               | Clear project scope articulation         | 15 minutes       | Nov 22          | A            |
+| 8           | Develop Data Collection Script         | Python script for sensor data logging    | 2 hours          | Nov 27          | B            |
+| 9           | Create Response Script for Real-Time Access | Web interface for accessing data     | 2 hours          | Nov 29          | B            |
+| 10           | Create Test Graphs                     | Analyze data with Matplotlib             | 1 hour           | Nov 29          | C            |
+| 11           | Develop Visualizations                 | Graphs of collected data                 | 2 hours          | Dec 7           | C            |
+| 12           | Create Project Poster                  | Summarize findings                       | 1 hour           | Dec 8           | D            |
 
 ---
 
