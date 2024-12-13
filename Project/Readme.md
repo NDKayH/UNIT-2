@@ -282,7 +282,37 @@ The continuous `while True` loop is essential for maintaining uninterrupted data
 2. **Keep the loop simple**: 
 
    - Avoiding adding conditional checks in the loop means that no **computational overhead** can be added and the potential failure points are reduced.
-     
+
+```.py
+
+ while True:
+        # Read humidity and temperature from the DHT11 sensor
+        humidity, temperature = Adafruit_DHT.read_retry(DHT_SENSOR, DHT_PIN)
+        
+        # Get the current timestamp in ISO 8601 format (e.g., "2024-12-04T18:35:00")
+        current_time = datetime.now().isoformat()
+
+        # Check if the sensor reading was successful
+        if humidity is not None and temperature is not None:
+            # Create a payload (dictionary) for the temperature reading
+            payload = {
+                "datetime": current_time,       # Timestamp of the reading
+                "sensor_id": SENSOR_ID,         # Unique sensor ID
+                "value": round(temperature, 1)  # Temperature value rounded to 1 decimal place
+            }
+
+            # Send the temperature data to the server via a POST request
+            requests.post(SERVER_URL, json=payload, headers=headers)
+            print(f"Temp Sent: {payload}")      # Print a confirmation message with the sent payload
+
+            # Create a payload for the humidity reading
+            humidity_payload = {
+                "datetime": current_time,        # Timestamp of the reading
+                "sensor_id": SENSOR_ID,          # Unique sensor ID
+                "value": round(humidity)         # Humidity value rounded to the nearest whole number
+            }
+```
+
 #### **Data Redundancy and Reliability**
 
 To be sure the data is collected, the script uses **double storage**:
