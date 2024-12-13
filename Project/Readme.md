@@ -129,10 +129,6 @@ This flow chart illustrates the procces by which I extracted data from the serve
 
 ---
 
-Here is a detailed **Test Plan** table for your project, which includes various functional and non-functional tests to ensure the system operates smoothly and meets the objectives.
-
----
-
 | **Test No.** | **Test Type**              | **Description**                                                                                     | **Procedure**                                                                                                                          | **Expected Outcome**                                                                                                        | **Criteria** |
 |--------------|----------------------------|-----------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|--------------|
 | 1            | Functional: Sensor Reading | Check that the DHT11 sensor reads temperature and humidity accurately.                             | Run the data collection script from the local pi.                                                                                      | Temperature and humidity readings are not fluctuating unrealistically.                                                    | B            |
@@ -423,6 +419,8 @@ plt.show()
 
 ```
 
+
+
 ## **Result (Raw Data)**
 
 ![image](https://github.com/user-attachments/assets/b0c364ea-146d-45a9-930d-48f85d5d09ab)
@@ -443,6 +441,23 @@ def moving_average(windowSize:int, x:list)->list:
 
     return x_smoothed
 
+```
+
+
+
+* Linear Regression Calculation:
+    * `np.polyfit()` fits a linear model `(degree=1)` to the temperature data.
+    * It returns te slope and intercept of the best-fit line.
+    
+* Generating Predictions:
+    * The list comprehension computes the predicted temperature values (`temp_linear`) using the equation:
+    * `Prediction=(slope×x)+intercept\text{Prediction} = (\text{slope} \times x) + \text{intercept}Prediction=(slope×x)+intercept`
+
+* **How It Helps:** This allows you to visualize trends and identify if temperatures are rising or falling over time.
+
+```.py
+temp_slope, temp_intercept = np.polyfit(temp_x_downsampled, temp_downsampled, 1)
+temp_linear = [temp_slope * x + temp_intercept for x in temp_x_downsampled]
 ```
 
 ## **Data Analysis**
